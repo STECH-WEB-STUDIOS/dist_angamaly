@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Updated Navbar</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Thin Navbar -->
+    <div class="w-full bg-[#4d0000] text-white text-sm px-5 py-7 flex items-center nav1">
+        <div class="flex items-center space-x-2">
+            <span>Call Us Today! 0484 2911800</span>
+            <span>|</span>
+            <a href="mailto:mail@depaul.edu.in">mail@depaul.edu.in</a>
+        </div>
+        <div class="bg-[#a20000] py-2 px-4 flex space-x-4 nav1-items">
+            <a href="#" class="text-white">FEE PAYMENTS</a>
+            <a href="#" class="text-white">ADMISSION PORTAL</a>
+            <span>|</span>
+            <a href="#" class="text-white">LOGIN</a>
+        </div>
+    </div>
+    
+
+    <!-- Header Image -->
+    <div class="w-full logo-nav">
+        <img src="assets/logohead.jpg" alt="Header Image" class="w-full h-[10vh] object-cover dist-logo">
+    </div>
+
+    <!-- Navbar -->
+    <nav class="bg-blue-600 text-white">
+        <div class="container mx-auto flex justify-center">
+            <!-- Navbar Items -->
+            <ul class="flex space-x-6 items-center py-4">
+                <li><a href="#" class="hover:text-gray-200">About</a></li>
+                <li><a href="#" class="hover:text-gray-200">Admission</a></li>
+                <li class="relative group">
+                    <a href="#" class="hover:text-gray-200">Academics</a>
+                    <!-- Dropdown -->
+                    <div class="absolute hidden group-hover:block bg-white text-black shadow-lg mt-2 rounded-md">
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Courses</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Departments</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Programs</a>
+                    </div>
+                </li>
+                <li><a href="#" class="hover:text-gray-200">Community</a></li>
+                <li><a href="#" class="hover:text-gray-200">Student Service</a></li>
+                <li><a href="#" class="hover:text-gray-200">Placement</a></li>
+                <li class="relative group">
+                    <a href="#" class="hover:text-gray-200">Campus Life</a>
+                    <!-- Dropdown -->
+                    <div class="absolute hidden group-hover:block bg-white text-black shadow-lg mt-2 rounded-md">
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Clubs</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Facilities</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Hostels</a>
+                    </div>
+                </li>
+                <li><a href="#" class="hover:text-gray-200">IQAC</a></li>
+                <li><a href="#" class="hover:text-gray-200">News & Events</a></li>
+                <li><a href="#" class="hover:text-gray-200">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+</body>
+
+</html>

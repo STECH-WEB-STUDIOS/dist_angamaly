@@ -1,0 +1,62 @@
+.nav1-items{
+    position: absolute;
+    right: 0 !important;
+    z-index: 2;
+    margin-top: 60px;
+    clip-path: polygon(4% 0, 100% 0, 100% 100%, 0 100%) !important;
+    padding: 8px 30px !important;
+    font-size: 14px;
+}
+
+/* Ensure Navbar Text Visibility */
+.navbar-brand,
+.nav-link {
+  color: #000; /* Default text color */
+}
+
+.dept-head{
+  clip-path: polygon(0% 0, 80% 0, 100% 100%, 0 100%) !important;
+}
+
+
+/* Show dropdown on hover */
+.parent-dropdown:hover {
+    display: block;
+}
+
+.parent-group:hover .child-dropdown {
+    display: block;
+}
+
+/* Styling hover effect */
+.hover-effect {
+    transition: all 0.3s ease-in-out;
+}
+
+.hover-effect:hover {
+    background-color: #f3f4f6; /* Equivalent to Tailwind's gray-100 */
+    border-bottom: 2px solid #4d0000; /* Custom border color */
+}
+
+
+
+@media (max-width: 1200px) {
+  #menu-toggle {
+    display: block;  /* Show hamburger */
+  }
+  #menu {
+    display: none;   /* Hide nav items */
+  }
+}
+
+
+@media (max-width: 380px) {
+    .nav1{
+        font-size: 10px;
+    }
+    .nav1-items {
+        font-size: 10px;
+        padding: 5px 10px !important;
+        margin-top: 70px;
+    }
+}
