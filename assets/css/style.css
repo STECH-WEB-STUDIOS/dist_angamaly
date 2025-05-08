@@ -1,11 +1,32 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Varela Round", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1, h2, h3 {
+  font-family: "Varela Round", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.oswald-heading {
+  font-family: "Oswald", sans-serif !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+}
+
 .nav1-items{
-    position: absolute;
-    right: 0 !important;
-    z-index: 2;
-    margin-top: 60px;
-    clip-path: polygon(4% 0, 100% 0, 100% 100%, 0 100%) !important;
-    padding: 8px 30px !important;
-    font-size: 14px;
+  position: absolute;
+  right: 0 !important;
+  z-index: 2;
+  margin-top: 60px;
+  clip-path: polygon(4% 0, 100% 0, 100% 100%, 0 100%) !important;
+  padding: 8px 30px !important;
+  font-size: 14px;
 }
 
 /* Ensure Navbar Text Visibility */
@@ -14,8 +35,14 @@
   color: #000; /* Default text color */
 }
 
-.dept-head{
-  clip-path: polygon(0% 0, 80% 0, 100% 100%, 0 100%) !important;
+.nav2 {
+  position: sticky !important;
+}
+
+.polygon-head{
+  clip-path: polygon(0% 0, 88% 0, 100% 100%, 0 100%) !important;
+  width: 30% !important;
+  text-align: center !important;
 }
 
 
@@ -38,6 +65,11 @@
     border-bottom: 2px solid #4d0000; /* Custom border color */
 }
 
+
+p.about-dist {
+  line-height: 30px !important;
+  font-size: 17px !important;
+}
 
 
 @media (max-width: 1200px) {
