@@ -1,12 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>DiST Angamaly, Top MBA colleges in Kerala</title>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,9 +34,86 @@
         </script>
     </div>
 
+    <nav class="bg-white border-gray-200 shadow-lg z-50 sticky top-0">
+        <div class="container mx-auto flex items-center justify-between p-4">
+            <!-- Hamburger for Small Screens -->
+            <button id="menu-toggle" class="text-gray-800 lg:hidden">
+                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+
+            <!-- Nav Items (center-aligned for larger screens) -->
+            <div id="menu" class="hidden lg:flex space-x-6 mx-auto">
+                <a href="index.html" class="relative text-gray-800 font-semibold flex items-center group">
+                    <i class="fas fa-home mr-2"></i> <!-- Font Awesome Home Icon -->
+                    <span class="absolute left-0 bottom-0 w-full h-[2px] bg-primary scale-x-0 group-hover:scale-x-100 transform transition-transform duration-300"></span>
+                </a>
+
+                <a href="#about " class="relative text-gray-800 font-medium whitespace-nowrap group">About
+                    <span class="absolute left-0 bottom-0 w-full h-[2px] bg-primary scale-x-0 group-hover:scale-x-100 transform transition-transform duration-300"></span>
+                </a>
+                <a href="#clubs-associations" class="relative text-gray-800 font-medium whitespace-nowrap group">Clubs & Associations
+                    <span class="absolute left-0 bottom-0 w-full h-[2px] bg-primary scale-x-0 group-hover:scale-x-100 transform transition-transform duration-300"></span>
+                </a>
+                <a href="#placements" class="relative text-gray-800 font-medium whitespace-nowrap group">Placements
+                    <span class="absolute left-0 bottom-0 w-full h-[2px] bg-primary scale-x-0 group-hover:scale-x-100 transform transition-transform duration-300"></span>
+                </a>
+                <a href="#incubation-startup" class="relative text-gray-800 font-medium whitespace-nowrap group">Incubation & Startup
+                    <span class="absolute left-0 bottom-0 w-full h-[2px] bg-primary scale-x-0 group-hover:scale-x-100 transform transition-transform duration-300"></span>
+                </a>
+                <a href="#fest" class="relative text-gray-800 font-medium whitespace-nowrap group">FEST
+                    <span class="absolute left-0 bottom-0 w-full h-[2px] bg-primary scale-x-0 group-hover:scale-x-100 transform transition-transform duration-300"></span>
+                </a>
+                <a href="#social-reach-out" class="relative text-gray-800 font-medium whitespace-nowrap group">Social Reach OUT
+                    <span class="absolute left-0 bottom-0 w-full h-[2px] bg-primary scale-x-0 group-hover:scale-x-100 transform transition-transform duration-300"></span>
+                </a>
+                <a href="#achievements" class="relative text-gray-800 font-medium whitespace-nowrap group">Achievements
+                    <span class="absolute left-0 bottom-0 w-full h-[2px] bg-primary scale-x-0 group-hover:scale-x-100 transform transition-transform duration-300"></span>
+                </a>
+                <a href="#research" class="relative text-gray-800 font-medium whitespace-nowrap group">Research
+                    <span class="absolute left-0 bottom-0 w-full h-[2px] bg-primary scale-x-0 group-hover:scale-x-100 transform transition-transform duration-300"></span>
+                </a>
+            </div>
+        </div>
+
+
+        <!-- Dropdown for Small Screens -->
+        <div id="dropdown-menu" class="hidden flex-col bg-gray-100 px-5 shadow-md">
+            <a href="#" class="relative block text-gray-800 w-full text-center py-2 font-semibold group">
+                <i class="fas fa-home mr-2"></i> <!-- Font Awesome Home Icon -->
+                <span class="absolute left-1/2 bottom-0 w-1/4 h-[2px] bg-primary transform -translate-x-1/2 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+            </a>
+            <a href="#about" class="relative block text-gray-800 w-full text-center py-2 group">About
+                <span class="absolute left-1/2 bottom-0 w-1/4 h-[2px] bg-primary transform -translate-x-1/2 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+            </a>
+            <a href="#clubs-associations" class="relative block text-gray-800 w-full text-center py-2 group">Clubs & Associations
+                <span class="absolute left-1/2 bottom-0 w-1/4 h-[2px] bg-primary transform -translate-x-1/2 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+            </a>
+            <a href="#placements" class="relative block text-gray-800 w-full text-center py-2 group">Placements
+                <span class="absolute left-1/2 bottom-0 w-1/4 h-[2px] bg-primary transform -translate-x-1/2 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+            </a>
+            <a href="#incubation-startup" class="relative block text-gray-800 w-full text-center py-2 group">Incubation & Startup
+                <span class="absolute left-1/2 bottom-0 w-1/4 h-[2px] bg-primary transform -translate-x-1/2 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+            </a>
+            <a href="#fest" class="relative block text-gray-800 w-full text-center py-2 group">FEST
+                <span class="absolute left-1/2 bottom-0 w-1/4 h-[2px] bg-primary transform -translate-x-1/2 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+            </a>
+            <a href="#social-reach-out" class="relative block text-gray-800 w-full text-center py-2 group">Social Reach OUT
+                <span class="absolute left-1/2 bottom-0 w-1/4 h-[2px] bg-primary transform -translate-x-1/2 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+            </a>
+            <a href="#achievements" class="relative block text-gray-800 w-full text-center py-2 group">Achievements
+                <span class="absolute left-1/2 bottom-0 w-1/4 h-[2px] bg-primary transform -translate-x-1/2 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+            </a>
+            <a href="#research" class="relative block text-gray-800 w-full text-center py-2 group">Research
+                <span class="absolute left-1/2 bottom-0 w-1/4 h-[2px] bg-primary transform -translate-x-1/2 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+            </a>
+        </div>
+    </nav>
+
     <section id="cs-poster" class="relative mt-2">
         <div class="bg-cover bg-center w-full h-[396px] flex items-center" style="background-image: url('assets/images/cs.png');">
-            <h4 class="text-white text-6xl font-bold pl-10 oswald-heading">
+            <h4 class="text-white  font-bold pl-10 oswald-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
                 SCHOOL OF COMPUTER SCIENCE
             </h4>
         </div>
@@ -48,21 +128,21 @@
         <!-- Images in a Row -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-11/12 mx-auto mt-10">
             <!-- Single Image Block -->
-            <a href="#" class="relative group h-64 overflow-hidden rounded-lg shadow-lg bg-gray-200">
+            <a href="#" class="relative group h-64 overflow-hidden rounded-lg shadow-lg bg-gray-700">
                 <div class="absolute inset-0 bg-cover bg-center transition-transform duration-300 scale-100 group-hover:scale-105" style="background-image: url('https://source.unsplash.com/600x400/?conference');"></div>
                 <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
                     <h3 class="text-white text-xl font-semibold transition-all duration-300 group-hover:text-2xl">Tech Conference</h3>
                 </div>
             </a>
 
-            <a href="#" class="relative group h-64 overflow-hidden rounded-lg shadow-lg bg-gray-200">
+            <a href="#" class="relative group h-64 overflow-hidden rounded-lg shadow-lg bg-gray-700">
                 <div class="absolute inset-0 bg-cover bg-center transition-transform duration-300 scale-100 group-hover:scale-105" style="background-image: url('https://source.unsplash.com/600x400/?education,event');"></div>
                 <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
                     <h3 class="text-white text-xl font-semibold transition-all duration-300 group-hover:text-2xl">Cultural Fest</h3>
                 </div>
             </a>
 
-            <a href="#" class="relative group h-64 overflow-hidden rounded-lg shadow-lg bg-gray-200">
+            <a href="#" class="relative group h-64 overflow-hidden rounded-lg shadow-lg bg-gray-700">
                 <div class="absolute inset-0 bg-cover bg-center transition-transform duration-300 scale-100 group-hover:scale-105" style="background-image: url('https://source.unsplash.com/600x400/?college,sports');"></div>
                 <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
                     <h3 class="text-white text-xl font-semibold transition-all duration-300 group-hover:text-2xl">Sports Meet</h3>
@@ -71,10 +151,10 @@
         </div>
     </section>
 
-    <section id="cs-desc" class="relative mt-10 py-12 bg-gray-50 text-gray-800">
+    <section id="cs-desc" class="relative mt-10 py-12 bg-gray-50 text-gray-800 p-8">
         <div class="max-w-7xl mx-auto rounded-xl shadow-xl border border-gray-300 bg-white">
             <!-- Heading -->
-            <div class="text-center bg-gradient-to-r from-primary via-secondary to-primary text-white py-4 rounded-tr-xl rounded-tl-xl">
+            <div class="text-center bg-gradient-to-r from-primary via-secondary to-primary text-white p-4 rounded-tr-xl rounded-tl-xl">
                 <h3 class="text-2xl font-bold oswald-heading">Welcome to the School of Computer Science at DiST</h3>
             </div>
 
@@ -96,8 +176,8 @@
 
             <!-- Mission -->
             <div class="mb-8">
-                <div class="relative bg-gradient-to-r from-primary to-[#ff0000] text-white font-semibold text-2xl py-2 mb-8 polygon-head w-[200px] px-10 pl-4">
-                    <span class="tracking-widest">Mission</span>
+                <div class="relative bg-gradient-to-r from-primary to-[#ff0000] text-center text-white font-semibold py-2 mb-8 polygon-head w-[60%] text-lg px-10 pl-4 sm:w-[40%] sm:text-2xl">
+                    <span class="tracking-wide">Mission</span>
                 </div>
                 <p class="text-justify leading-relaxed px-5">
                     To ignite curiosity and inspire excellence in computing disciplines. We empower students with cutting-edge knowledge and practical skills, shaping industry-ready professionals driven by innovation, ethical responsibility, and a passion for solving real-world challenges.
@@ -106,8 +186,8 @@
 
             <!-- Quality Objectives -->
             <div class="mb-8">
-                <div class="relative bg-gradient-to-r from-primary to-[#ff0000] text-white font-semibold text-2xl py-2 mb-8 polygon-head w-[200px] px-10 pl-4">
-                    <span class="tracking-widest">Quality Objectives</span>
+                <div class="relative bg-gradient-to-r from-primary to-[#ff0000] text-center text-white font-semibold py-2 mb-8 polygon-head w-[80%] text-lg px-10 pl-4 sm:w-[40%] sm:text-2xl">
+                    <span class="tracking-wide">Quality Objectives</span>
                 </div>
                 <ul class="list-disc space-y-2 px-10">
                     <li>Intellectual, social, ethical, and spiritual excellence.</li>
@@ -118,8 +198,8 @@
 
             <!-- Why Choose Us -->
             <div class="mb-8">
-                <div class="relative bg-gradient-to-r from-primary to-[#ff0000] text-white font-semibold text-2xl py-2 mb-8 polygon-head w-[200px] px-10 pl-4">
-                    <span class="tracking-widest">Why Choose Us?</span>
+                <div class="relative bg-gradient-to-r from-primary to-[#ff0000] text-center text-white font-semibold py-2 mb-8 polygon-head w-[60%] text-lg px-10 pl-4 sm:w-[40%] sm:text-2xl">
+                    <span class="tracking-wide">Why Choose Us?</span>
                 </div>
                 <ul class="list-disc space-y-2 px-10">
                     <li><strong>Industry-Aligned Curriculum:</strong> Stay ahead with programs designed to reflect the latest tech trends.</li>
@@ -132,22 +212,17 @@
 
             <!-- Programs Offered -->
             <div>
-                <div class="relative bg-gradient-to-r from-primary to-[#ff0000] text-white font-semibold text-2xl py-2 mb-8 polygon-head w-[200px] px-10 pl-4">
-                    <span class="tracking-widest">Programmes Offered</span>
+                <div class="relative bg-gradient-to-r from-primary to-[#ff0000] text-center text-white font-semibold py-2 mb-8 polygon-head w-[80%] text-lg px-10 pl-4 sm:w-[40%] sm:text-2xl">
+                    <span class="tracking-wide">Programmes Offered</span>
                 </div>
                 <ul class="list-disc space-y-2 px-10 pb-10">
-                    <li>Bachelor of Computer Applications (BCA) (Honors)</li>
-                    <li>Master of Computer Applications (MCA) – 2 years</li>
-                    <li>Integrated Master of Computer Applications (MCA) – 5 years</li>
+                    <li><b>Bachelor of Computer Applications</b> (BCA) (Honors)</li>
+                    <li><b>Master of Computer Applications</b> (MCA) – 2 years</li>
+                    <li><b>Integrated Master of Computer Applications</b> (IMCA) – 5 years</li>
                 </ul>
             </div>
         </div>
     </section>
-
-
-
-
-
 
     <div id="footer">
         <script>
@@ -158,8 +233,6 @@
             });
         </script>
     </div>
-
-
 
     <script src="assets/js/main.js"></script>
 
