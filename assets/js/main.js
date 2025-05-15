@@ -20,72 +20,73 @@ menuToggle.addEventListener('click', () => {
 
 
 //Carousal script
-const visibleCount = 4;
-const carousel = document.getElementById('placementCarousel');
-const wrapper = document.getElementById('carouselWrapper');
-let currentIndex = visibleCount; // Start after prepended clones
-let slideWidth = 0;
-let autoScrollInterval;
+let visibleCount = 4; // Default
+    let currentIndex = 0;
+    let slideWidth = 0;
+    let autoScrollInterval;
 
-// Clone slides for infinite effect
-function cloneSlides() {
-  const items = Array.from(carousel.children);
-  const total = items.length;
+    const carousel = document.getElementById("placementCarousel");
+    const wrapper = document.getElementById("carouselWrapper");
 
-  const startClones = items.slice(0, visibleCount).map(el => el.cloneNode(true));
-  const endClones = items.slice(total - visibleCount).map(el => el.cloneNode(true));
+    function updateVisibleCount() {
+      const width = window.innerWidth;
+      if (width < 640) visibleCount = 1;       // sm
+      else if (width < 768) visibleCount = 2;  // md
+      else if (width < 1024) visibleCount = 3; // lg
+      else visibleCount = 4;                   // xl and up
+    }
 
-  startClones.forEach(clone => carousel.appendChild(clone));
-  endClones.forEach(clone => carousel.insertBefore(clone, carousel.firstChild));
-}
+    function updateCarouselPosition() {
+      const firstCard = carousel.querySelector("div");
+      if (!firstCard) return;
 
-// Update carousel position
-function updateCarouselPosition() {
-  slideWidth = carousel.children[0].offsetWidth + 25;
-  carousel.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
-}
+      slideWidth = firstCard.getBoundingClientRect().width + 20; // 20 = space-x-5 gap
+      carousel.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    }
 
-// Slide logic
-function slideCarousel(direction) {
-  currentIndex += direction;
-  carousel.style.transition = 'transform 0.5s ease-in-out';
-  updateCarouselPosition();
+    function slideCarousel(direction) {
+      const total = carousel.children.length;
+      const maxIndex = total - visibleCount;
 
-  carousel.addEventListener('transitionend', handleLoopEdges, { once: true });
-}
+      currentIndex += direction;
+      if (currentIndex < 0) currentIndex = 0;
+      if (currentIndex > maxIndex) currentIndex = maxIndex;
 
-// Handle seamless jump at loop edges
-function handleLoopEdges() {
-  const total = carousel.children.length;
-  if (currentIndex >= total - visibleCount) {
-    currentIndex = visibleCount;
-    carousel.style.transition = 'none';
-    updateCarouselPosition();
-  } else if (currentIndex < visibleCount) {
-    currentIndex = total - visibleCount * 2;
-    carousel.style.transition = 'none';
-    updateCarouselPosition();
-  }
-}
+      carousel.style.transition = 'transform 0.5s ease-in-out';
+      updateCarouselPosition();
+    }
 
-// Auto-scroll
-function startAutoScroll() {
-  stopAutoScroll();
-  autoScrollInterval = setInterval(() => slideCarousel(1), 5000);
-}
+    function startAutoScroll() {
+      stopAutoScroll();
+      autoScrollInterval = setInterval(() => {
+        const total = carousel.children.length;
+        const maxIndex = total - visibleCount;
 
-function stopAutoScroll() {
-  if (autoScrollInterval) clearInterval(autoScrollInterval);
-}
+        if (currentIndex >= maxIndex) {
+          currentIndex = 0;
+        } else {
+          currentIndex += 1;
+        }
 
-// Initialization
-window.addEventListener("load", () => {
-  cloneSlides();
-  updateCarouselPosition();
-  startAutoScroll();
-});
+        carousel.style.transition = 'transform 0.5s ease-in-out';
+        updateCarouselPosition();
+      }, 5000);
+    }
 
-window.addEventListener("resize", updateCarouselPosition);
-wrapper.addEventListener("mouseenter", stopAutoScroll);
-wrapper.addEventListener("mouseleave", startAutoScroll);
+    function stopAutoScroll() {
+      if (autoScrollInterval) clearInterval(autoScrollInterval);
+    }
 
+    window.addEventListener("load", () => {
+      updateVisibleCount();
+      updateCarouselPosition();
+      startAutoScroll();
+    });
+
+    window.addEventListener("resize", () => {
+      updateVisibleCount();
+      updateCarouselPosition();
+    });
+
+    wrapper.addEventListener("mouseenter", stopAutoScroll);
+    wrapper.addEventListener("mouseleave", startAutoScroll);

@@ -92,6 +92,23 @@ p.about-dist {
 }
 
 
+@media (max-width: 1700px) {
+  .dept-cards {
+    padding: 90px !important;
+  }
+}
+
+@media (max-width: 872px) {
+  .dept-cards {
+    padding: 40px !important;
+  }
+}
+@media (max-width: 576px) {
+  .dept-cards {
+    padding: 20px !important;
+  }
+}
+
 @media (max-width: 380px) {
     .nav1{
         font-size: 10px;
