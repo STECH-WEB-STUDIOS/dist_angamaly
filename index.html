@@ -5,17 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>DiST Angamaly, Top MBA colleges in Kerala</title>
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            content: ["./**/*.{html,js}"],
+            theme: {
+                extend: {},
+            },
+        }
+    </script>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Add AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" href="assets/images/logo.png">
 </head>
@@ -45,80 +60,80 @@
             <div id="menu" class="hidden lg:flex space-x-6 mx-auto">
                 <a href="index.html" class="relative text-gray-800 font-semibold flex items-center group">
                     <i class="fas fa-home mr-2"></i> <!-- Font Awesome Home Icon -->
-                    <span class="absolute left-0 bottom-0 w-full h-[2px] bg-primary scale-x-0 group-hover:scale-x-100 transform transition-transform duration-300"></span>
+                    <span class="absolute left-0 bottom-0 w-full h-[2px] bg-[#4D0000] scale-x-0 group-hover:scale-x-100 transform transition-transform duration-300"></span>
                 </a>
                 <div class="relative group">
                     <a href="#about" class="relative text-gray-800 font-medium whitespace-nowrap">
                         About
-                        <span class="absolute left-0 bottom-0 w-full h-[2px] bg-primary scale-x-0 group-hover:scale-x-100 transform transition-transform duration-300"></span>
+                        <span class="absolute left-0 bottom-0 w-full h-[2px] bg-[#4D0000] scale-x-0 group-hover:scale-x-100 transform transition-transform duration-300"></span>
                     </a>
                     <!-- About Dropdown Menu -->
                     <div class="absolute left-0 top-full hidden group-hover:block bg-white shadow-lg w-64 z-10">
                         <ul class="text-sm text-gray-800">
                             <!-- Menu Items -->
                             <li>
-                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-primary transition duration-300">
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-[#4D0000] transition duration-300">
                                     About DiST
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-primary transition duration-300">
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-[#4D0000] transition duration-300">
                                     Vision, Mission & Values
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-primary transition duration-300">
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-[#4D0000] transition duration-300">
                                     Motto & Tagline
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-primary transition duration-300">
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-[#4D0000] transition duration-300">
                                     Our Heritage
                                 </a>
                             </li>
                             <!-- Administration with Side Dropdown -->
                             <li class="relative group">
-                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-primary transition duration-300">
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-[#4D0000] transition duration-300">
                                     Administration
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-primary transition duration-300">
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-[#4D0000] transition duration-300">
                                     Organisation Chart
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-primary transition duration-300">
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-[#4D0000] transition duration-300">
                                     Approvals & Certifications
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-primary transition duration-300">
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-[#4D0000] transition duration-300">
                                     Milestones
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-primary transition duration-300">
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-[#4D0000] transition duration-300">
                                     Policies
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-primary transition duration-300">
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-[#4D0000] transition duration-300">
                                     Code of Conduct
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-primary transition duration-300">
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-[#4D0000] transition duration-300">
                                     RTI
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-primary transition duration-300">
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-[#4D0000] transition duration-300">
                                     Financial Audit Report
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-primary transition duration-300">
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-[#4D0000] transition duration-300">
                                     Development Plan
                                 </a>
                             </li>
@@ -129,45 +144,45 @@
                 <div class="relative group">
                     <a href="#about" class="relative text-gray-800 font-medium whitespace-nowrap">
                         Admissions
-                        <span class="absolute left-0 bottom-0 w-full h-[2px] bg-primary scale-x-0 group-hover:scale-x-100 transform transition-transform duration-300"></span>
+                        <span class="absolute left-0 bottom-0 w-full h-[2px] bg-[#4D0000] scale-x-0 group-hover:scale-x-100 transform transition-transform duration-300"></span>
                     </a>
                     <!-- Admissions Dropdown Menu -->
                     <div class="absolute left-0 top-full hidden group-hover:block bg-white shadow-lg w-64 z-10">
                         <ul class="text-sm text-gray-800">
                             <!-- Menu Items -->
                             <li>
-                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-primary transition duration-300">
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-[#4D0000] transition duration-300">
                                     Notifications
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-primary transition duration-300">
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-[#4D0000] transition duration-300">
                                     Admission Procedure
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-primary transition duration-300">
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-[#4D0000] transition duration-300">
                                     Why DiST?
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-primary transition duration-300">
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-[#4D0000] transition duration-300">
                                     Fee Refund Policy
                                 </a>
                             </li>
                             <!-- Administration with Side Dropdown -->
                             <li class="relative group">
-                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-primary transition duration-300">
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-[#4D0000] transition duration-300">
                                     International Students Admission Procedure
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-primary transition duration-300">
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-[#4D0000] transition duration-300">
                                     Location - Ambience
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-primary transition duration-300">
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-[#4D0000] transition duration-300">
                                     F A Q ?
                                 </a>
                             </li>
@@ -175,29 +190,310 @@
                     </div>
                 </div>
 
-                <a href="#academics" class="relative text-gray-800 font-medium whitespace-nowrap group">Academics
-                    <span class="absolute left-0 bottom-0 w-full h-[2px] bg-primary scale-x-0 group-hover:scale-x-100 transform transition-transform duration-300"></span>
-                </a>
-                <a href="#community" class="relative text-gray-800 font-medium whitespace-nowrap group">Community
-                    <span class="absolute left-0 bottom-0 w-full h-[2px] bg-primary scale-x-0 group-hover:scale-x-100 transform transition-transform duration-300"></span>
-                </a>
-                <a href="#student-services" class="relative text-gray-800 font-medium whitespace-nowrap group">Student Services
-                    <span class="absolute left-0 bottom-0 w-full h-[2px] bg-primary scale-x-0 group-hover:scale-x-100 transform transition-transform duration-300"></span>
-                </a>
+                <div class="relative group">
+                    <a href="#academics" class="relative text-gray-800 font-medium whitespace-nowrap group">Academics
+                        <span class="absolute left-0 bottom-0 w-full h-[2px] bg-[#4D0000] scale-x-0 group-hover:scale-x-100 transform transition-transform duration-300"></span>
+                    </a>
+                    <div class="absolute left-0 top-full hidden group-hover:block bg-white shadow-lg w-[265px] z-10">
+                        <ul class="text-sm text-gray-800">
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-[#4D0000] transition duration-300">
+                                    Departments
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-[#4D0000] transition duration-300">
+                                    Programmes
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-[#4D0000] transition duration-300">
+                                    Research
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-[#4D0000] transition duration-300">
+                                    Educational Methodology
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-[#4D0000] transition duration-300">
+                                    Library
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-[#4D0000] transition duration-300">
+                                    Computer Lab
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-[#4D0000] transition duration-300">
+                                    Media Lab
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-[#4D0000] transition duration-300">
+                                    Animation Lab
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-[#4D0000] transition duration-300">
+                                    Centers
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-[#4D0000] transition duration-300">
+                                    Calender
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-[#4D0000] transition duration-300">
+                                    Hand Book
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-[#4D0000] transition duration-300">
+                                    OBE Manual
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <a href="#community" class="relative text-gray-800 font-medium whitespace-nowrap group">Community
+                        <span class="absolute left-0 bottom-0 w-full h-[2px] bg-[#4D0000] scale-x-0 group-hover:scale-x-100 transform transition-transform duration-300"></span>
+                    </a>
+                    <div class="absolute left-0 top-full hidden group-hover:block bg-white shadow-lg w-[265px] z-10">
+                        <ul class="text-sm text-gray-800">
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-[#4D0000] transition duration-300">
+                                    Head Of Department
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-[#4D0000] transition duration-300">
+                                    Teaching Staff
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-[#4D0000] transition duration-300">
+                                    Non-Teaching Staff
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-[#4D0000] transition duration-300">
+                                    Counsellors
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-[#4D0000] transition duration-300">
+                                    Professional Educators
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-[#4D0000] transition duration-300">
+                                    Committees
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-[#4D0000] transition duration-300">
+                                    Association
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-[#4D0000] transition duration-300">
+                                    Clubs
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-[#4D0000] transition duration-300">
+                                    Alumni
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <a href="#student-service" class="relative text-gray-800 font-medium whitespace-nowrap group">Student Service
+                        <span class="absolute left-0 bottom-0 w-full h-[2px] bg-[#4D0000] scale-x-0 group-hover:scale-x-100 transform transition-transform duration-300"></span>
+                    </a>
+                    <div class="absolute left-0 top-full hidden group-hover:block bg-white shadow-lg w-[265px] z-10">
+                        <ul class="text-sm text-gray-800">
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-[#4D0000] transition duration-300">
+                                    National Sevice Scheme
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-[#4D0000] transition duration-300">
+                                    IEDC
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-[#4D0000] transition duration-300">
+                                    NISP
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-[#4D0000] transition duration-300">
+                                    School Of Professional Development
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-[#4D0000] transition duration-300">
+                                    Value Education
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-[#4D0000] transition duration-300">
+                                    Counselling Services
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-[#4D0000] transition duration-300">
+                                    Student Exchange Programme
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
                 <a href="#placement" class="relative text-gray-800 font-medium whitespace-nowrap group">Placement
-                    <span class="absolute left-0 bottom-0 w-full h-[2px] bg-primary scale-x-0 group-hover:scale-x-100 transform transition-transform duration-300"></span>
-                </a>
-                <a href="#campus-life" class="relative text-gray-800 font-medium whitespace-nowrap group">Campus Life
-                    <span class="absolute left-0 bottom-0 w-full h-[2px] bg-primary scale-x-0 group-hover:scale-x-100 transform transition-transform duration-300"></span>
-                </a>
-                <a href="#iqac" class="relative text-gray-800 font-medium whitespace-nowrap group">IQAC
-                    <span class="absolute left-0 bottom-0 w-full h-[2px] bg-primary scale-x-0 group-hover:scale-x-100 transform transition-transform duration-300"></span>
-                </a>
-                <a href="#information-center" class="relative text-gray-800 font-medium whitespace-nowrap group">Information Center
-                    <span class="absolute left-0 bottom-0 w-full h-[2px] bg-primary scale-x-0 group-hover:scale-x-100 transform transition-transform duration-300"></span>
-                </a>
+                        <span class="absolute left-0 bottom-0 w-full h-[2px] bg-[#4D0000] scale-x-0 group-hover:scale-x-100 transform transition-transform duration-300"></span>
+                    </a>
+                <div class="relative group">
+                    <a href="#campus-life" class="relative text-gray-800 font-medium whitespace-nowrap group">Campus Life
+                        <span class="absolute left-0 bottom-0 w-full h-[2px] bg-[#4D0000] scale-x-0 group-hover:scale-x-100 transform transition-transform duration-300"></span>
+                    </a>
+                    <div class="absolute left-0 top-full hidden group-hover:block bg-white shadow-lg w-64 z-10">
+                        <ul class="text-sm text-gray-800">
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-[#4D0000] transition duration-300">
+                                    Housing And Dining
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-[#4D0000] transition duration-300">
+                                    Transportation Facility
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-[#4D0000] transition duration-300">
+                                    Media Gallery
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-[#4D0000] transition duration-300">
+                                    Sports And Games
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-[#4D0000] transition duration-300">
+                                    Fitness Center
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-[#4D0000] transition duration-300">
+                                    Facilities For Differently Abled
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <a href="#iqac" class="relative text-gray-800 font-medium whitespace-nowrap group">IQAC
+                        <span class="absolute left-0 bottom-0 w-full h-[2px] bg-[#4D0000] scale-x-0 group-hover:scale-x-100 transform transition-transform duration-300"></span>
+                    </a>
+                    <div class="absolute left-0 top-full hidden group-hover:block bg-white shadow-lg w-[265px] z-">
+                        <ul class="text-sm text-gray-800">
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-[#4D0000] transition duration-300">
+                                    Vision. Mission & Objectives
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-[#4D0000] transition duration-300">
+                                    Strategies
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-[#4D0000] transition duration-300">
+                                    Functions
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-[#4D0000] transition duration-300">
+                                    Benefits
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-[#4D0000] transition duration-300">
+                                    Reports
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-[#4D0000] transition duration-300">
+                                    AQAR
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-[#4D0000] transition duration-300">
+                                    Members
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-[#4D0000] transition duration-300">
+                                    Gender Action Plan
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-[#4D0000] transition duration-300">
+                                    Student Satisfaction Survey
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-[#4D0000] transition duration-300">
+                                    Best Practices
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-[#4D0000] transition duration-300">
+                                    Institutional Distinctiveness
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-[#4D0000] transition duration-300">
+                                    Undertaking
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <a href="#information-center" class="relative text-gray-800 font-medium whitespace-nowrap group">Information Center
+                        <span class="absolute left-0 bottom-0 w-full h-[2px] bg-[#4D0000] scale-x-0 group-hover:scale-x-100 transform transition-transform duration-300"></span>
+                    </a>
+                    <div class="absolute left-0 top-full hidden group-hover:block bg-white shadow-lg w-[265px] z-10">
+                        <ul class="text-sm text-gray-800">
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-[#4D0000] transition duration-300">
+                                    News & Events
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-[#4D0000] transition duration-300">
+                                    Circulars
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-[#4D0000] transition duration-300">
+                                    Careers
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
                 <a href="#contact" class="relative text-gray-800 font-medium whitespace-nowrap group">Contact
-                    <span class="absolute left-0 bottom-0 w-full h-[2px] bg-primary scale-x-0 group-hover:scale-x-100 transform transition-transform duration-300"></span>
+                    <span class="absolute left-0 bottom-0 w-full h-[2px] bg-[#4D0000] scale-x-0 group-hover:scale-x-100 transform transition-transform duration-300"></span>
                 </a>
             </div>
         </div>
@@ -207,37 +503,37 @@
         <div id="dropdown-menu" class="hidden flex-col bg-gray-100 px-5 shadow-md">
             <a href="#" class="relative block text-gray-800 w-full text-center py-2 font-semibold group">
                 <i class="fas fa-home mr-2"></i> <!-- Font Awesome Home Icon -->
-                <span class="absolute left-1/2 bottom-0 w-1/4 h-[2px] bg-primary transform -translate-x-1/2 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+                <span class="absolute left-1/2 bottom-0 w-1/4 h-[2px] bg-[#4D0000] transform -translate-x-1/2 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
             </a>
             <a href="#about" class="relative block text-gray-800 w-full text-center py-2 group">About
-                <span class="absolute left-1/2 bottom-0 w-1/4 h-[2px] bg-primary transform -translate-x-1/2 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+                <span class="absolute left-1/2 bottom-0 w-1/4 h-[2px] bg-[#4D0000] transform -translate-x-1/2 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
             </a>
             <a href="#admissions" class="relative block text-gray-800 w-full text-center py-2 group">Admissions
-                <span class="absolute left-1/2 bottom-0 w-1/4 h-[2px] bg-primary transform -translate-x-1/2 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+                <span class="absolute left-1/2 bottom-0 w-1/4 h-[2px] bg-[#4D0000] transform -translate-x-1/2 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
             </a>
             <a href="#academics" class="relative block text-gray-800 w-full text-center py-2 group">Academics
-                <span class="absolute left-1/2 bottom-0 w-1/4 h-[2px] bg-primary transform -translate-x-1/2 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+                <span class="absolute left-1/2 bottom-0 w-1/4 h-[2px] bg-[#4D0000] transform -translate-x-1/2 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
             </a>
             <a href="#community" class="relative block text-gray-800 w-full text-center py-2 group">Community
-                <span class="absolute left-1/2 bottom-0 w-1/4 h-[2px] bg-primary transform -translate-x-1/2 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+                <span class="absolute left-1/2 bottom-0 w-1/4 h-[2px] bg-[#4D0000] transform -translate-x-1/2 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
             </a>
             <a href="#student-services" class="relative block text-gray-800 w-full text-center py-2 group">Student Services
-                <span class="absolute left-1/2 bottom-0 w-1/4 h-[2px] bg-primary transform -translate-x-1/2 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+                <span class="absolute left-1/2 bottom-0 w-1/4 h-[2px] bg-[#4D0000] transform -translate-x-1/2 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
             </a>
             <a href="#placement" class="relative block text-gray-800 w-full text-center py-2 group">Placement
-                <span class="absolute left-1/2 bottom-0 w-1/4 h-[2px] bg-primary transform -translate-x-1/2 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+                <span class="absolute left-1/2 bottom-0 w-1/4 h-[2px] bg-[#4D0000] transform -translate-x-1/2 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
             </a>
             <a href="#campus-life" class="relative block text-gray-800 w-full text-center py-2 group">Campus Life
-                <span class="absolute left-1/2 bottom-0 w-1/4 h-[2px] bg-primary transform -translate-x-1/2 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+                <span class="absolute left-1/2 bottom-0 w-1/4 h-[2px] bg-[#4D0000] transform -translate-x-1/2 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
             </a>
             <a href="#iqac" class="relative block text-gray-800 w-full text-center py-2 group">IQAC
-                <span class="absolute left-1/2 bottom-0 w-1/4 h-[2px] bg-primary transform -translate-x-1/2 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+                <span class="absolute left-1/2 bottom-0 w-1/4 h-[2px] bg-[#4D0000] transform -translate-x-1/2 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
             </a>
             <a href="#information-center" class="relative block text-gray-800 w-full text-center py-2 group">Information Center
-                <span class="absolute left-1/2 bottom-0 w-1/4 h-[2px] bg-primary transform -translate-x-1/2 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+                <span class="absolute left-1/2 bottom-0 w-1/4 h-[2px] bg-[#4D0000] transform -translate-x-1/2 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
             </a>
             <a href="#contact" class="relative block text-gray-800 w-full text-center py-2 group">Contact
-                <span class="absolute left-1/2 bottom-0 w-1/4 h-[2px] bg-primary transform -translate-x-1/2 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+                <span class="absolute left-1/2 bottom-0 w-1/4 h-[2px] bg-[#4D0000] transform -translate-x-1/2 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
             </a>
         </div>
     </nav>
@@ -252,10 +548,10 @@
 
     <section id="about-section" class="bg-gray-100 mt-5">
         <div class="py-5 ">
-            <div class="relative bg-gradient-to-r from-primary to-[#ff0000] text-center text-white font-semibold py-2 mb-8 polygon-head w-[60%] text-lg px-10 pl-4 sm:w-[40%] sm:text-2xl">
+            <div class="relative bg-gradient-to-r from-[#4D0000] to-[#ff0000] text-center text-white font-semibold py-2 mb-8 polygon-head w-[60%] text-lg px-10 pl-4 sm:w-[40%] sm:text-2xl">
                 <i class="fas fa-graduation-cap"></i> <span class="tracking-wide">About DiST</span>
             </div>
-            <div class="text-primary">
+            <div class="text-[#4D0000]">
                 <p class="text-justify w-3/4 m-auto sm:text-base about-dist">
                     De Paul Institute of Science & Technology (DiST), Angamaly, is an NAAC Accredited 'A' Grade with CGPA 3.11 (1st Cycle) and an ISO 9001:2015 Certified college run by De Paul Education Trust and owned by Marymatha Province of Vincentian Congregation. Education is one of the most important areas of its activities. The Vincentians hold aloft the sublime values of justice, peace, and love and aim at creating a new generation with a difference. The students must prove not only their academic excellence but also show a deep commitment to the society they live in. The institution strives to provide a holistic education that fosters intellectual, emotional, and social growth, preparing students to face the challenges of the modern world with confidence and integrity.
                 </p>
@@ -266,7 +562,7 @@
 
     <section id="news-section" class="bg-gray-100 py-10">
         <!-- Section Header -->
-        <div class="text-center bg-gradient-to-r from-primary via-secondary to-primary text-white py-4">
+        <div class="text-center bg-gradient-to-r from-[#4D0000] via-[#A20000] to-[#4D0000] text-white py-4">
             <h3 class="text-2xl font-bold oswald-heading">NEWS & EVENTS</h3>
         </div>
 
@@ -332,92 +628,94 @@
 
 
 
-    <section id="courses-section" class="bg-gray-100 mt-5 relative" style="background-image: url('assets/images/college.jpg'); background-size: cover; background-position: center;">
-        <div class="absolute inset-0 bg-red-700 bg-opacity-70 z-0"></div>
-        <div class="py-5 relative z-10">
-            <div class="relative bg-gradient-to-r from-[#ffc4c4] via-white to-white text-center text-primary font-semibold py-2 mb-8 polygon-head w-[60%] text-lg px-10 pl-4 sm:w-[40%] sm:text-2xl"> 
-                <i class="fas fa-book-open"></i> <span class="tracking-wide"> Our Programmes</span>
-            </div>
+    <section id="courses-section" class="bg-gray-100 mt-5 py-5 relative" style="background-image: url('assets/images/college.jpg'); background-size: cover; background-position: center;">
+        <div class="absolute inset-0 bg-white/50 bg-opacity-70 z-0">
+        </div>
+        
+        <div class="relative bg-gradient-to-r from-white to-white/50 text-center text-[#A20000] border-2 border-white font-semibold py-2 mb-8 polygon-head w-[60%] text-lg px-10 pl-4 sm:w-[40%] sm:text-2xl"> 
+            <i class="fas fa-book-open"></i> <span class="tracking-wide"> Our Programmes</span>
+        </div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-[auto_1fr] gap-0 max-w-6xl mx-auto border-2 border-white rounded-[20px] mb-8 overflow-hidden">
+        <div class="py-5 px-4 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-[auto_1fr] gap-0 max-w-6xl mx-auto border-2 border-white bg-white/50 rounded-[20px] mb-8 overflow-hidden" data-aos="fade-up" data-aos-duration="2000">
   
                 <!-- Sidebar heading with full height background -->
-                <div class="bg-white/20 text-white border-r-2 border-white px-6 py-6 flex items-center justify-center lg:justify-start rounded-t-[18px] lg:rounded-bl-[18px] lg:rounded-tl-[18px] lg:rounded-tr-none rounded-tr-[18px]">
-                    <h3 class="text-2xl font-semibold text-center lg:text-left leading-snug">
-                        Undergraduate <br> Programs
+                <div class="bg-white/90 text-white border-r-2 border-white px-6 py-6 flex items-center justify-center lg:justify-start rounded-t-[18px] lg:rounded-bl-[18px] lg:rounded-tl-[18px] lg:rounded-tr-none rounded-tr-[18px]">
+                    <h3 class="text-2xl font-bold text-[#A20000] text-center lg:text-left leading-snug">
+                        UG <br> Programmes
                     </h3>
-                </div>
+                </div>  
               
                 <!-- Programs list -->
                 <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 p-6">
                     <li>
-                        <a href="#" class="h-full flex flex-col justify-between group bg-secondary text-white border border-secondary rounded-lg px-5 py-4 hover:border-white transition duration-300">
+                        <a href="#" class="h-full flex flex-col justify-between group bg-white/90 text-[#A20000] border-1 border-white/50 rounded-lg p-3 transition duration-300 prgrm-card">
                         <span class="flex flex-col gap-y-1">
                             <strong class="text-lg">BCA</strong>
-                            <span class="text-sm">Bachelor of Computer Application</span>
+                            <span class="text-sm font-semibold">Bachelor of Computer Application</span    >
                         </span>
                         <i class="fas fa-arrow-right opacity-0 group-hover:opacity-100 transition duration-300 self-end"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="h-full flex flex-col justify-between group bg-secondary text-white border border-secondary rounded-lg px-5 py-4 hover:border-white transition duration-300">
+                        <a href="#" class="h-full flex flex-col justify-between group bg-white/90 text-[#A20000] border-1 border-white/50 rounded-lg p-3 transition duration-300 prgrm-card">
                         <span class="flex flex-col gap-y-1">
                             <strong class="text-lg">B.Com</strong>
-                            <span class="text-sm">Bachelor of Commerce</span>
+                            <span class="text-sm font-semibold">Bachelor of Commerce</span>
                         </span>
                         <i class="fas fa-arrow-right opacity-0 group-hover:opacity-100 transition duration-300 self-end"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="h-full flex flex-col justify-between group bg-secondary text-white border border-secondary rounded-lg px-5 py-4 hover:border-white transition duration-300">
+                        <a href="#" class="h-full flex flex-col justify-between group bg-white/90 text-[#A20000] border-1 border-white/50 rounded-lg p-3 transition duration-300 prgrm-card">
                         <span class="flex flex-col gap-y-1">
                             <strong class="text-lg">BA MM</strong>
-                            <span class="text-sm">BA in Multimedia</span>
+                            <span class="text-sm font-semibold">BA in Multimedia</span>
                         </span>
                         <i class="fas fa-arrow-right opacity-0 group-hover:opacity-100 transition duration-300 self-end"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="h-full flex flex-col justify-between group bg-secondary text-white border border-secondary rounded-lg px-5 py-4 hover:border-white transition duration-300">
+                        <a href="#" class="h-full flex flex-col justify-between group bg-white/90 text-[#A20000] border-1 border-white/50 rounded-lg p-3 transition duration-300 prgrm-card">
                         <span class="flex flex-col gap-y-1">
                             <strong class="text-lg">BA AVfx</strong>
-                            <span class="text-sm">BA in Animation & Visual Effects</span>
+                            <span class="text-sm font-semibold">BA in Animation & Visual Effects</span>
                         </span>
                         <i class="fas fa-arrow-right opacity-0 group-hover:opacity-100 transition duration-300 self-end"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="h-full flex flex-col justify-between group bg-secondary text-white border border-secondary rounded-lg px-5 py-4 hover:border-white transition duration-300">
+                        <a href="#" class="h-full flex flex-col justify-between group bg-white/90 text-[#A20000] border-1 border-white/50 rounded-lg p-3 transition duration-300 prgrm-card">
                         <span class="flex flex-col gap-y-1">
                             <strong class="text-lg">BSW</strong>
-                            <span class="text-sm">Bachelor of Social Work</span>
+                            <span class="text-sm font-semibold">Bachelor of Social Work</span>
                         </span>
                         <i class="fas fa-arrow-right opacity-0 group-hover:opacity-100 transition duration-300 self-end"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="h-full flex flex-col justify-between group bg-secondary text-white border border-secondary rounded-lg px-5 py-4 hover:border-white transition duration-300">
+                        <a href="#" class="h-full flex flex-col justify-between group bg-white/90 text-[#A20000] border-1 border-white/50 rounded-lg p-3 transition duration-300 prgrm-card">
                         <span class="flex flex-col gap-y-1">
                             <strong class="text-lg">BBA</strong>
-                            <span class="text-sm">Bachelor of Business Administration</span>
+                            <span class="text-sm font-semibold">Bachelor of Business Administration</span>
                         </span>
                         <i class="fas fa-arrow-right opacity-0 group-hover:opacity-100 transition duration-300 self-end"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="h-full flex flex-col justify-between group bg-secondary text-white border border-secondary rounded-lg px-5 py-4 hover:border-white transition duration-300">
+                        <a href="#" class="h-full flex flex-col justify-between group bg-white/90 text-[#A20000] border-1 border-white/50 rounded-lg p-3 transition duration-300 prgrm-card">
                         <span class="flex flex-col gap-y-1">
                             <strong class="text-lg">B.Sc</strong>
-                            <span class="text-sm">Hotel Management & Culinary Arts</span>
+                            <span class="text-sm font-semibold">Hotel Management & Culinary Arts</span>
                         </span>
                         <i class="fas fa-arrow-right opacity-0 group-hover:opacity-100 transition duration-300 self-end"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="h-full flex flex-col justify-between group bg-secondary text-white border border-secondary rounded-lg px-5 py-4 hover:border-white transition duration-300">
+                        <a href="#" class="h-full flex flex-col justify-between group bg-white/90 text-[#A20000] border-1 border-white/50 rounded-lg p-3 transition duration-300 prgrm-card">
                         <span class="flex flex-col gap-y-1">
                             <strong class="text-lg">B.Sc</strong>
-                            <span class="text-sm">Psychology</span>
+                            <span class="text-sm font-semibold">Psychology</span>
                         </span>
                         <i class="fas fa-arrow-right opacity-0 group-hover:opacity-100 transition duration-300 self-end"></i>
                         </a>
@@ -426,85 +724,80 @@
             </div>
             
             
-            <div class="grid grid-cols-1 lg:grid-cols-[auto_1fr] gap-0 max-w-6xl mx-auto border-2 border-white rounded-[20px] mb-8 overflow-hidden">
+            <div class="grid grid-cols-1 lg:grid-cols-[auto_1fr] gap-0 max-w-6xl mx-auto border-2 border-white bg-white/50 rounded-[20px] mb-8 overflow-hidden" data-aos="fade-up" data-aos-duration="2000">
   
                 <!-- Sidebar heading with full height background -->
-                <div class="bg-white/20 text-white border-r-2 border-white px-6 py-6 flex items-center justify-center lg:justify-start rounded-t-[18px] lg:rounded-bl-[18px] lg:rounded-tl-[18px] lg:rounded-tr-none rounded-tr-[18px]">
-                    <h3 class="text-2xl font-semibold text-center lg:text-left leading-snug">
-                        Postgraduate <br> Programs
+                <div class="bg-white/90 text-white border-r-2 border-white px-6 py-6 flex items-center justify-center lg:justify-start rounded-t-[18px] lg:rounded-bl-[18px] lg:rounded-tl-[18px] lg:rounded-tr-none rounded-tr-[18px]">
+                    <h3 class="text-2xl font-bold text-[#A20000] text-center lg:text-left leading-snug">
+                        PG <br> Programmes
                     </h3>
                 </div>
               
                 <!-- Programs list -->
                 <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
                     <li>
-                        <a href="#" class="h-full flex flex-col justify-between group bg-secondary text-white border border-secondary rounded-lg px-5 py-4 hover:border-white transition duration-300">
+                        <a href="#" class="h-full flex flex-col justify-between group bg-white/90 text-[#A20000] border-1 border-white/50 rounded-lg p-3 transition duration-300 prgrm-card">
                         <span class="flex flex-col gap-y-1">
                             <strong class="text-lg">MCA</strong>
-                            <span class="text-sm">Master of Computer Application</span>
+                            <span class="text-sm font-semibold">Master of Computer Application</span>
                         </span>
                         <i class="fas fa-arrow-right opacity-0 group-hover:opacity-100 transition duration-300 self-end"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="h-full flex flex-col justify-between group bg-secondary text-white border border-secondary rounded-lg px-5 py-4 hover:border-white transition duration-300">
+                        <a href="#" class="h-full flex flex-col justify-between group bg-white/90 text-[#A20000] border-1 border-white/50 rounded-lg p-3 transition duration-300 prgrm-card">
                         <span class="flex flex-col gap-y-1">
                             <strong class="text-lg">IMCA</strong>
-                            <span class="text-sm">Integrated Master of Computer Application</span>
+                            <span class="text-sm font-semibold">Integrated Master of Computer Application</span>
                         </span>
                         <i class="fas fa-arrow-right opacity-0 group-hover:opacity-100 transition duration-300 self-end"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="h-full flex flex-col justify-between group bg-secondary text-white border border-secondary rounded-lg px-5 py-4 hover:border-white transition duration-300">
+                        <a href="#" class="h-full flex flex-col justify-between group bg-white/90 text-[#A20000] border-1 border-white/50 rounded-lg p-3 transition duration-300 prgrm-card">
                         <span class="flex flex-col gap-y-1">
                             <strong class="text-lg">MBA</strong>
-                            <span class="text-sm">Master of Business Administration</span>
+                            <span class="text-sm font-semibold">Master of Business Administration</span>
                         </span>
                         <i class="fas fa-arrow-right opacity-0 group-hover:opacity-100 transition duration-300 self-end"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="h-full flex flex-col justify-between group bg-secondary text-white border border-secondary rounded-lg px-5 py-4 hover:border-white transition duration-300">
+                        <a href="#" class="h-full flex flex-col justify-between group bg-white/90 text-[#A20000] border-1 border-white/50 rounded-lg p-3 transition duration-300 prgrm-card">
                         <span class="flex flex-col gap-y-1">
                             <strong class="text-lg">MSW</strong>
-                            <span class="text-sm">Master of Social Work</span>
+                            <span class="text-sm font-semibold">Master of Social Work</span>
                         </span>
                         <i class="fas fa-arrow-right opacity-0 group-hover:opacity-100 transition duration-300 self-end"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="h-full flex flex-col justify-between group bg-secondary text-white border border-secondary rounded-lg px-5 py-4 hover:border-white transition duration-300">
+                        <a href="#" class="h-full flex flex-col justify-between group bg-white/90 text-[#A20000] border-1 border-white/50 rounded-lg p-3 transition duration-300 prgrm-card">
                         <span class="flex flex-col gap-y-1">
                             <strong class="text-lg">MA JMC</strong>
-                            <span class="text-sm">Master of Arts in Journalism and Mass Communication</span>
+                            <span class="text-sm font-semibold">Master of Arts in Journalism and Mass Communication</span>
                         </span>
                         <i class="fas fa-arrow-right opacity-0 group-hover:opacity-100 transition duration-300 self-end"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="h-full flex flex-col justify-between group bg-secondary text-white border border-secondary rounded-lg px-5 py-4 hover:border-white transition duration-300">
+                        <a href="#" class="h-full flex flex-col justify-between group bg-white/90 text-[#A20000] border-1 border-white/50 rounded-lg p-3 transition duration-300 prgrm-card">
                         <span class="flex flex-col gap-y-1">
                             <strong class="text-lg">MA HRM</strong>
-                            <span class="text-sm">Master of Arts in Human Resource Management</span>
+                            <span class="text-sm font-semibold">Master of Arts in Human Resource Management</span>
                         </span>
                         <i class="fas fa-arrow-right opacity-0 group-hover:opacity-100 transition duration-300 self-end"></i>
                         </a>
                     </li>
                 </ul>
             </div>
-              
-
-
-              
-            
-
         </div>
     </section>
+
     
     <section id="cards-section" class="bg-gray-100 py-10">
         <div class="py-5">
-            <div class="relative bg-gradient-to-r from-primary to-[#ff0000] text-center text-white font-semibold py-2 mb-8 polygon-head w-[60%] text-lg px-10 pl-4 sm:w-[40%] sm:text-2xl">
+            <div class="relative bg-gradient-to-r from-[#4D0000] to-[#ff0000] text-center text-white font-semibold py-2 mb-8 polygon-head w-[60%] text-lg px-10 pl-4 sm:w-[40%] sm:text-2xl">
                 <i class="fa-solid fa-door-open"></i> <span class="tracking-wide"> Departments</span>
             </div>
 
@@ -518,16 +811,16 @@
                         <a href="javascript:void(0)" class="font-semibold text-lg transition duration-500 inline-block mb-2">School of Computer Science</a>
                         <p class="text-gray-500 text-sm">
                             School of Computer Science had its beginning in 2002 with the objective of helping students to harvest the benefits of the IT revolution that swept through every facet of modern human life for the past two decades. <br>
-                            <a href="javascript:void(0)" class="text-primary text-[12px] hover:underline">View more</a>
+                            <a href="javascript:void(0)" class="text-[#4D0000] text-[12px] hover:underline">View more</a>
                         </p>
                     </div>
 
-                    <a href="cs.html" class="relative inline-flex items-center justify-center w-1/2 m-auto mb-5 p-4 px-6 py-1 overflow-hidden font-medium text-primary transition duration-300 ease-out border-2 border-primary rounded-full shadow-md group">
-                        <span class="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-primary group-hover:translate-x-0 ease">
+                    <a href="cs.html" class="relative inline-flex items-center justify-center w-1/2 m-auto mb-5 p-4 px-6 py-1 overflow-hidden font-medium text-[#4D0000] transition duration-300 ease-out border-2 border-[#4D0000] rounded-full shadow-md group">
+                        <span class="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-[#4D0000] group-hover:translate-x-0 ease">
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                         </span>
-                        <span class="absolute flex items-center justify-center w-full h-full text-primary transition-all duration-300 transform group-hover:translate-x-full ease">Explore</span>
-                        <span class="relative invisible text-primary">Explore</span>
+                        <span class="absolute flex items-center justify-center w-full h-full text-[#4D0000] transition-all duration-300 transform group-hover:translate-x-full ease">Explore</span>
+                        <span class="relative invisible text-[#4D0000]">Explore</span>
                     </a>
                 </div>
 
@@ -540,16 +833,16 @@
                         <a href="javascript:void(0)" class="font-semibold text-lg transition duration-500 inline-block mb-2">School of Social Work</a>
                         <p class="text-gray-500 text-sm">
                             De Paul School of Social Work was established in the year 2004 with a concrete vision of imparting high quality education in professional Social Work to meet the growing needs of welfare professionals around the globe. <br>
-                            <a href="javascript:void(0)" class="text-primary text-[12px] hover:underline">View more</a>
+                            <a href="javascript:void(0)" class="text-[#4D0000] text-[12px] hover:underline">View more</a>
                         </p>
                     </div>
 
-                    <a href="cs.html" class="relative inline-flex items-center justify-center w-1/2 m-auto mb-5 p-4 px-6 py-1 overflow-hidden font-medium text-primary transition duration-300 ease-out border-2 border-primary rounded-full shadow-md group">
-                        <span class="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-primary group-hover:translate-x-0 ease">
+                    <a href="cs.html" class="relative inline-flex items-center justify-center w-1/2 m-auto mb-5 p-4 px-6 py-1 overflow-hidden font-medium text-[#4D0000] transition duration-300 ease-out border-2 border-[#4D0000] rounded-full shadow-md group">
+                        <span class="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-[#4D0000] group-hover:translate-x-0 ease">
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                         </span>
-                        <span class="absolute flex items-center justify-center w-full h-full text-primary transition-all duration-300 transform group-hover:translate-x-full ease">Explore</span>
-                        <span class="relative invisible text-primary">Explore</span>
+                        <span class="absolute flex items-center justify-center w-full h-full text-[#4D0000] transition-all duration-300 transform group-hover:translate-x-full ease">Explore</span>
+                        <span class="relative invisible text-[#4D0000]">Explore</span>
                     </a>
                 </div>
 
@@ -562,16 +855,16 @@
                         <a href="javascript:void(0)" class="font-semibold text-lg transition duration-500 inline-block mb-2">School of Management</a>
                         <p class="text-gray-500 text-sm">
                             An effective leader for business and society is one who is able to perceive, comprehend, and interconnect with people from all segments of society. We being one of the premier B-schools in Kerala,<br>
-                            <a href="javascript:void(0)" class="text-primary text-[12px] hover:underline">View more</a>
+                            <a href="javascript:void(0)" class="text-[#4D0000] text-[12px] hover:underline">View more</a>
                         </p>
                     </div>
 
-                    <a href="cs.html" class="relative inline-flex items-center justify-center w-1/2 m-auto mb-5 p-4 px-6 py-1 overflow-hidden font-medium text-primary transition duration-300 ease-out border-2 border-primary rounded-full shadow-md group">
-                        <span class="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-primary group-hover:translate-x-0 ease">
+                    <a href="cs.html" class="relative inline-flex items-center justify-center w-1/2 m-auto mb-5 p-4 px-6 py-1 overflow-hidden font-medium text-[#4D0000] transition duration-300 ease-out border-2 border-[#4D0000] rounded-full shadow-md group">
+                        <span class="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-[#4D0000] group-hover:translate-x-0 ease">
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                         </span>
-                        <span class="absolute flex items-center justify-center w-full h-full text-primary transition-all duration-300 transform group-hover:translate-x-full ease">Explore</span>
-                        <span class="relative invisible text-primary">Explore</span>
+                        <span class="absolute flex items-center justify-center w-full h-full text-[#4D0000] transition-all duration-300 transform group-hover:translate-x-full ease">Explore</span>
+                        <span class="relative invisible text-[#4D0000]">Explore</span>
                     </a>
                 </div>
 
@@ -585,16 +878,16 @@
                         <a href="javascript:void(0)" class="font-semibold text-lg transition duration-500 inline-block mb-2">School of Commerce</a>
                         <p class="text-gray-500 text-sm">
                             "Education is the most powerful weapon which you can use to change the world" - Nelson Mandela. Department of Commerce began its functioning in 2010 with a single batch of 36 students in B.Com Computer Application.<br>
-                            <a href="javascript:void(0)" class="text-primary text-[12px] hover:underline">View more</a>
+                            <a href="javascript:void(0)" class="text-[#4D0000] text-[12px] hover:underline">View more</a>
                         </p>
                     </div>
 
-                    <a href="cs.html" class="relative inline-flex items-center justify-center w-1/2 m-auto mb-5 p-4 px-6 py-1 overflow-hidden font-medium text-primary transition duration-300 ease-out border-2 border-primary rounded-full shadow-md group">
-                        <span class="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-primary group-hover:translate-x-0 ease">
+                    <a href="cs.html" class="relative inline-flex items-center justify-center w-1/2 m-auto mb-5 p-4 px-6 py-1 overflow-hidden font-medium text-[#4D0000] transition duration-300 ease-out border-2 border-[#4D0000] rounded-full shadow-md group">
+                        <span class="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-[#4D0000] group-hover:translate-x-0 ease">
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                         </span>
-                        <span class="absolute flex items-center justify-center w-full h-full text-primary transition-all duration-300 transform group-hover:translate-x-full ease">Explore</span>
-                        <span class="relative invisible text-primary">Explore</span>
+                        <span class="absolute flex items-center justify-center w-full h-full text-[#4D0000] transition-all duration-300 transform group-hover:translate-x-full ease">Explore</span>
+                        <span class="relative invisible text-[#4D0000]">Explore</span>
                     </a>
                 </div>
 
@@ -607,16 +900,16 @@
                         <a href="javascript:void(0)" class="font-semibold text-lg transition duration-500 inline-block mb-2">School of Media and Communication</a>
                         <p class="text-gray-500 text-sm">
                             The School of Media & Communication had its inception in the year 2012 with the purpose of shaping graduates with a broad range of communication andmultimedia production skills <br>
-                            <a href="javascript:void(0)" class="text-primary text-[12px] hover:underline">View more</a>
+                            <a href="javascript:void(0)" class="text-[#4D0000] text-[12px] hover:underline">View more</a>
                         </p>
                     </div>
 
-                    <a href="cs.html" class="relative inline-flex items-center justify-center w-1/2 m-auto mb-5 p-4 px-6 py-1 overflow-hidden font-medium text-primary transition duration-300 ease-out border-2 border-primary rounded-full shadow-md group">
-                        <span class="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-primary group-hover:translate-x-0 ease">
+                    <a href="cs.html" class="relative inline-flex items-center justify-center w-1/2 m-auto mb-5 p-4 px-6 py-1 overflow-hidden font-medium text-[#4D0000] transition duration-300 ease-out border-2 border-[#4D0000] rounded-full shadow-md group">
+                        <span class="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-[#4D0000] group-hover:translate-x-0 ease">
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                         </span>
-                        <span class="absolute flex items-center justify-center w-full h-full text-primary transition-all duration-300 transform group-hover:translate-x-full ease">Explore</span>
-                        <span class="relative invisible text-primary">Explore</span>
+                        <span class="absolute flex items-center justify-center w-full h-full text-[#4D0000] transition-all duration-300 transform group-hover:translate-x-full ease">Explore</span>
+                        <span class="relative invisible text-[#4D0000]">Explore</span>
                     </a>
                 </div>
 
@@ -629,87 +922,161 @@
                         <a href="javascript:void(0)" class="font-semibold text-lg transition duration-500 inline-block mb-2">School of English</a>
                         <p class="text-gray-500 text-sm">
                             School of English has been designed to sharpen the skills and polish the innate abilities of the students by a feasible inception into the academics and priming them with advanced systems, so as to transmute into the most <br>
-                            <a href="javascript:void(0)" class="text-primary text-[12px] hover:underline">View more</a>
+                            <a href="javascript:void(0)" class="text-[#4D0000] text-[12px] hover:underline">View more</a>
                         </p>
                     </div>
 
-                    <a href="cs.html" class="relative inline-flex items-center justify-center w-1/2 m-auto mb-5 p-4 px-6 py-1 overflow-hidden font-medium text-primary transition duration-300 ease-out border-2 border-primary rounded-full shadow-md group">
-                        <span class="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-primary group-hover:translate-x-0 ease">
+                    <a href="cs.html" class="relative inline-flex items-center justify-center w-1/2 m-auto mb-5 p-4 px-6 py-1 overflow-hidden font-medium text-[#4D0000] transition duration-300 ease-out border-2 border-[#4D0000] rounded-full shadow-md group">
+                        <span class="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-[#4D0000] group-hover:translate-x-0 ease">
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                         </span>
-                        <span class="absolute flex items-center justify-center w-full h-full text-primary transition-all duration-300 transform group-hover:translate-x-full ease">Explore</span>
-                        <span class="relative invisible text-primary">Explore</span>
+                        <span class="absolute flex items-center justify-center w-full h-full text-[#4D0000] transition-all duration-300 transform group-hover:translate-x-full ease">Explore</span>
+                        <span class="relative invisible text-[#4D0000]">Explore</span>
                     </a>
                 </div>
             </div>
         </div>
     </section>
-
-    <section id="placement-carousal-section" class="bg-red-100 py-10">
-    <div class="relative w-full max-w-lg mx-auto placement-main-carousel">
-        <!-- Carousel container -->
-        <div id="carousel" class="relative overflow-hidden">
-            <!-- Images with overlay and text -->
-            <div class="carousel-item relative w-full aspect-square group">
-                <img src="assets/images/college.jpg" alt="Image 1" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-300" />
-                <div class="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <p class="text-white text-2xl">Your Text Here</p>
-                </div>
-            </div>
-            <div class="carousel-item relative w-full aspect-square group hidden">
-                <img src="assets/images/commerce.jpg" alt="Image 2" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-300" />
-                <div class="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <p class="text-white text-2xl">Your Text Here</p>
-                </div>
-            </div>
-        </div>
-  
-        <!-- Dots for navigation -->
-        <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
-            <button class="dot w-4 h-4 rounded-full bg-white opacity-50 hover:opacity-100"></button>
-            <button class="dot w-4 h-4 rounded-full bg-white opacity-50 hover:opacity-100"></button>
-        </div>
-    </div>
-</section>
-
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-  let currentSlide = 0;
-  const items = document.querySelectorAll('.carousel-item');
-  const dots = document.querySelectorAll('.placement-main-carousel .dot');
-
-  function changeSlide(index) {
-    if (index < 0 || index >= items.length) return;
-
-    items.forEach((item, i) => {
-      item.classList.toggle('hidden', i !== index);
-    });
-
-    dots.forEach((dot, i) => {
-      if (i === index) {
-        dot.classList.remove('opacity-50');
-        dot.classList.add('bg-red-600', 'opacity-100');
-      } else {
-        dot.classList.remove('bg-red-600', 'opacity-100');
-        dot.classList.add('opacity-50');
-      }
-    });
-
-    currentSlide = index;
-  }
-
-  // Add click handlers to dots
-  dots.forEach((dot, index) => {
-    dot.addEventListener('click', () => changeSlide(index));
-  });
-
-  // Initial setup to show first slide
-  changeSlide(currentSlide);
-});
-</script>
-
-
       
+
+    <section id="placement-carousal-section" class="relative bg-gray-100 py-20" style="background-image: url('assets/images/main_block.JPG'); background-size: cover; background-position: center;">
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-white/50 bg-opacity-50 z-0"></div>
+      
+        <div class="relative z-10">
+            <div class="relative bg-gradient-to-r from-white to-white/50 text-center text-[#A20000] border-2 border-white font-semibold py-2 mb-8 polygon-head w-[60%] text-lg px-10 pl-4 sm:w-[40%] sm:text-2xl"> 
+                <i class="fa-solid fa-user-graduate"></i> <span class="tracking-wide">Students Placed</span>
+            </div>
+        
+            <!-- Carousel Container -->
+            <div class="relative max-w-7xl mx-auto overflow-hidden px-10">
+                <!-- Wrapper with overflow hidden -->
+                <div id="carouselWrapper" class="relative overflow-hidden w-full p-4">
+                    <!-- Carousel -->
+                    <div id="placementCarousel" class="flex transition-transform duration-500 space-x-5">
+                        <!-- Prepend (cloned last 4 images for infinite scroll effect) -->
+                        <div class="min-w-[calc(100%/4-20px)] rounded-xl overflow-hidden text-center">
+                            <img src="https://placehold.co/400" class="w-full h-auto rounded-t-xl" />
+                            <div class="bg-white/90 p-3">
+                                <p class="font-semibold text-lg text-[#4D0000]">Student A</p>
+                                <p class="text-sm text-[#A20000]">Placed at TCS</p>
+                            </div>
+                        </div>
+                        
+                        <div class="min-w-[calc(100%/4-20px)] rounded-xl overflow-hidden text-center">
+                            <img src="https://placehold.co/400" class="w-full h-auto rounded-t-xl" />
+                            <div class="bg-white/90 p-3">
+                                <p class="font-semibold text-lg text-[#4D0000]">Student A</p>
+                                <p class="text-sm text-[#A20000]">Placed at TCS</p>
+                            </div>
+                        </div>
+                        
+                        <div class="min-w-[calc(100%/4-20px)] rounded-xl overflow-hidden text-center">
+                            <img src="https://placehold.co/400" class="w-full h-auto rounded-t-xl" />
+                            <div class="bg-white/90 p-3">
+                                <p class="font-semibold text-lg text-[#4D0000]">Student A</p>
+                                <p class="text-sm text-[#A20000]">Placed at TCS</p>
+                            </div>
+                        </div>
+                        
+                        <div class="min-w-[calc(100%/4-20px)] rounded-xl overflow-hidden text-center">
+                            <img src="https://placehold.co/400" class="w-full h-auto rounded-t-xl" />
+                            <div class="bg-white/90 p-3">
+                                <p class="font-semibold text-lg text-[#4D0000]">Student A</p>
+                                <p class="text-sm text-[#A20000]">Placed at TCS</p>
+                            </div>
+                        </div>
+                        
+                    
+                        <!-- Actual Images -->
+                        <div class="min-w-[calc(100%/4-20px)] rounded-xl overflow-hidden text-center">
+                            <img src="https://placehold.co/400" class="w-full h-auto rounded-t-xl" />
+                            <div class="bg-white/90 p-3">
+                                <p class="font-semibold text-lg text-[#4D0000]">Student A</p>
+                                <p class="text-sm text-[#A20000]">Placed at TCS</p>
+                            </div>
+                        </div>
+                        
+                        <div class="min-w-[calc(100%/4-20px)] rounded-xl overflow-hidden text-center">
+                            <img src="https://placehold.co/400" class="w-full h-auto rounded-t-xl" />
+                            <div class="bg-white/90 p-3">
+                                <p class="font-semibold text-lg text-[#4D0000]">Student A</p>
+                                <p class="text-sm text-[#A20000]">Placed at TCS</p>
+                            </div>
+                        </div>
+                        
+                        <div class="min-w-[calc(100%/4-20px)] rounded-xl overflow-hidden text-center">
+                            <img src="https://placehold.co/400" class="w-full h-auto rounded-t-xl" />
+                            <div class="bg-white/90 p-3">
+                                <p class="font-semibold text-lg text-[#4D0000]">Student A</p>
+                                <p class="text-sm text-[#A20000]">Placed at TCS</p>
+                            </div>
+                        </div>
+                        
+                        <div class="min-w-[calc(100%/4-20px)] rounded-xl overflow-hidden text-center">
+                            <img src="https://placehold.co/400" class="w-full h-auto rounded-t-xl" />
+                            <div class="bg-white/90 p-3">
+                                <p class="font-semibold text-lg text-[#4D0000]">Student A</p>
+                                <p class="text-sm text-[#A20000]">Placed at TCS</p>
+                            </div>
+                        </div>
+                        
+                        <div class="min-w-[calc(100%/4-20px)] rounded-xl overflow-hidden text-center">
+                            <img src="https://placehold.co/400" class="w-full h-auto rounded-t-xl" />
+                            <div class="bg-white/90 p-3">
+                                <p class="font-semibold text-lg text-[#4D0000]">Student A</p>
+                                <p class="text-sm text-[#A20000]">Placed at TCS</p>
+                            </div>
+                        </div>
+                        
+                    
+                        <!-- Append (cloned first 4 images for infinite scroll effect) -->
+                        <div class="min-w-[calc(100%/4-20px)] rounded-xl overflow-hidden text-center">
+                            <img src="https://placehold.co/400" class="w-full h-auto rounded-t-xl" />
+                            <div class="bg-white/90 p-3">
+                                <p class="font-semibold text-lg text-[#4D0000]">Student A</p>
+                                <p class="text-sm text-[#A20000]">Placed at TCS</p>
+                            </div>
+                        </div>
+                        
+                        <div class="min-w-[calc(100%/4-20px)] rounded-xl overflow-hidden text-center">
+                            <img src="https://placehold.co/400" class="w-full h-auto rounded-t-xl" />
+                            <div class="bg-white/90 p-3">
+                                <p class="font-semibold text-lg text-[#4D0000]">Student A</p>
+                                <p class="text-sm text-[#A20000]">Placed at TCS</p>
+                            </div>
+                        </div>
+                        
+                        <div class="min-w-[calc(100%/4-20px)] rounded-xl overflow-hidden text-center">
+                            <img src="https://placehold.co/400" class="w-full h-auto rounded-t-xl" />
+                            <div class="bg-white/90 p-3">
+                                <p class="font-semibold text-lg text-[#4D0000]">Student A</p>
+                                <p class="text-sm text-[#A20000]">Placed at TCS</p>
+                            </div>
+                        </div>
+                        
+                        <div class="min-w-[calc(100%/4-20px)] rounded-xl overflow-hidden text-center">
+                            <img src="https://placehold.co/400" class="w-full h-auto rounded-t-xl" />
+                            <div class="bg-white/90 p-3">
+                                <p class="font-semibold text-lg text-[#4D0000]">Student A</p>
+                                <p class="text-sm text-[#A20000]">Placed at TCS</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Navigation Buttons -->
+                <button onclick="slideCarousel(1)" class="absolute left-0 top-1/2 transform -translate-y-1/2 px-0 py-2 z-20">
+                <i class="fas fa-chevron-left text-white text-3xl"></i>
+                </button>
+                <button onclick="slideCarousel(-1)" class="absolute right-0 top-1/2 transform -translate-y-1/2 px-0 py-2 z-20">
+                <i class="fas fa-chevron-right text-white text-3xl"></i>
+                </button>
+
+            </div>
+        </div>
+    </section>
+
 
     <div id="footer">
         <script>
@@ -723,6 +1090,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     <script src="assets/js/main.js"></script>
+
+    <!-- Bootstrap JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Add AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
 
 </body>
 </html>

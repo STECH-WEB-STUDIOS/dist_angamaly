@@ -19,7 +19,7 @@ body {
   position: absolute;
   right: 0 !important;
   z-index: 2;
-  margin-top: 60px;
+  margin-top: 65px;
   clip-path: polygon(4% 0, 100% 0, 100% 100%, 0 100%) !important;
   padding: 8px 30px !important;
   font-size: 14px;
@@ -39,12 +39,22 @@ body {
   clip-path: polygon(0% 0, 88% 0, 100% 100%, 0 100%) !important;
 }
 
-.carousel-item {
-  display: none;
+
+.prgrm-card:hover {
+  border: 2px solid #A20000;
 }
-.carousel-item:first-child {
-  display: block;
+.prgrm-card i {
+  opacity: 0 !important;
+  transition: opacity 0.3s ease;
 }
+
+.prgrm-card:hover i {
+  opacity: 1 !important;
+}
+
+#placementCarousel {
+  pointer-events: none;
+} 
 
 /* Show dropdown on hover */
 .parent-dropdown:hover {
@@ -99,3 +109,5 @@ p.about-dist {
         width: 75% !important;
     }
 }
+
+
