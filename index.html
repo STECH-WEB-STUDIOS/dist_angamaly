@@ -539,25 +539,127 @@
     </nav>
 
     <!-- Poster Section -->
-    <section id="poster" class="bg-gray-200 relative h-auto bg-cover mt-2 bg-center">
-        <!-- Poster Image -->
-        <img id="posterImage" src="assets/images/poster.jpg" alt="College Event Poster" class="w-full h-auto object-contain">
-    </section>
+    <section id="poster" class="bg-gray-200 relative mt-2">
+        <div id="posterCarousel" class="carousel slide" data-bs-ride="false">
+          <div class="carousel-inner">
+      
+            <!-- Image Slides -->
+            <div class="carousel-item active" data-type="image" data-interval="3000">
+              <img src="assets/posters/poster.jpg" class="w-full h-[500px] object-cover" alt="Event Poster">
+            </div>
+      
+            <div class="carousel-item" data-type="image" data-interval="3000">
+              <img src="assets/posters/mgug24-1.jpg" class="w-full h-[500px] object-cover" alt="Event Poster">
+            </div>
+      
+            <div class="carousel-item" data-type="image" data-interval="3000">
+              <img src="assets/posters/dignito24.jpg" class="w-full h-[500px] object-cover" alt="Event Poster">
+            </div>
+      
+            <div class="carousel-item" data-type="image" data-interval="3000">
+              <img src="assets/posters/daksh24-1.jpg" class="w-full h-[500px] object-cover" alt="Event Poster">
+            </div>
+      
+            <div class="carousel-item" data-type="image" data-interval="3000">
+              <img src="assets/posters/lafoire24.jpg" class="w-full h-[500px] object-cover" alt="Event Poster">
+            </div>
+      
+            <!-- Video Slide -->
+            <div class="carousel-item" data-type="video">
+              <div class="w-full h-[500px]">
+                <video class="carousel-video w-full h-full object-cover" muted playsinline>
+                  <source src="assets/posters/college_day.webm" type="video/webm">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+      
+          </div>
+      
+          <!-- Controls -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#posterCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#posterCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+    </section>      
+
 
     <!-- Main Content Section -->
-
     <section id="about-section" class="bg-gray-100 mt-5">
         <div class="py-5 ">
             <div class="relative bg-gradient-to-r from-[#4D0000] to-[#ff0000] text-center text-white font-semibold py-2 mb-8 polygon-head w-[60%] text-lg px-10 pl-4 sm:w-[40%] sm:text-2xl">
                 <i class="fas fa-graduation-cap"></i> <span class="tracking-wide">About DiST</span>
             </div>
-            <div class="text-[#4D0000]">
+            <div class="text-[#4D0000]" data-aos="fade-up" data-aos-duration="2000">
                 <p class="text-justify w-3/4 m-auto sm:text-base about-dist">
                     De Paul Institute of Science & Technology (DiST), Angamaly, is an NAAC Accredited 'A' Grade with CGPA 3.11 (1st Cycle) and an ISO 9001:2015 Certified college run by De Paul Education Trust and owned by Marymatha Province of Vincentian Congregation. Education is one of the most important areas of its activities. The Vincentians hold aloft the sublime values of justice, peace, and love and aim at creating a new generation with a difference. The students must prove not only their academic excellence but also show a deep commitment to the society they live in. The institution strives to provide a holistic education that fosters intellectual, emotional, and social growth, preparing students to face the challenges of the modern world with confidence and integrity.
                 </p>
             </div>
         </div>
     </section>
+
+
+    <section id="cards-section" class="bg-gray-100 py-10">
+        <div class="max-w-7xl mx-auto px-4" data-aos="fade-up" data-aos-duration="2000">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-7 gap-6">
+      
+            <!-- Card: Students -->
+            <div class="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center text-center">
+              <i class="fas fa-user-graduate text-blue-600 text-4xl mb-4"></i>
+              <h3 class="text-2xl font-bold count-up" data-target="1500">0+</h3>
+              <p class="text-gray-700 mt-1 text-sm font-semibold">Students</p>
+            </div>
+      
+            <!-- Card: Staff -->
+            <div class="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center text-center">
+              <i class="fas fa-chalkboard-teacher text-green-600 text-4xl mb-4"></i>
+              <h3 class="text-2xl font-bold count-up" data-target="50">0+</h3>
+              <p class="text-gray-700 mt-1 text-sm font-semibold">Staff</p>
+            </div>
+      
+            <!-- Card: Library Books -->
+            <div class="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center text-center">
+              <i class="fas fa-book text-purple-600 text-4xl mb-4"></i>
+              <h3 class="text-2xl font-bold count-up" data-target="3000">0+</h3>
+              <p class="text-gray-700 mt-1 text-sm font-semibold">Library Books</p>
+            </div>
+      
+            <!-- Card: Alumni -->
+            <div class="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center text-center">
+              <i class="fas fa-users text-yellow-600 text-4xl mb-4"></i>
+              <h3 class="text-2xl font-bold count-up" data-target="1200">0+</h3>
+              <p class="text-gray-700 mt-1 text-sm font-semibold">Alumni</p>
+            </div>
+      
+            <!-- Card: Association Clubs -->
+            <div class="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center text-center">
+              <i class="fas fa-street-view text-pink-600 text-4xl mb-4"></i>
+              <h3 class="text-2xl font-bold count-up" data-target="15">0+</h3>
+              <p class="text-gray-700 mt-1 text-sm font-semibold">Association Clubs</p>
+            </div>
+      
+            <!-- Card: Departments -->
+            <div class="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center text-center">
+              <i class="fas fa-door-open text-indigo-600 text-4xl mb-4"></i>
+              <h3 class="text-2xl font-bold count-up" data-target="8">0+</h3>
+              <p class="text-gray-700 mt-1 text-sm font-semibold">Departments</p>
+            </div>
+      
+            <!-- Card: Courses -->
+            <div class="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center text-center">
+              <i class="fas fa-book-open text-red-600 text-4xl mb-4"></i>
+              <h3 class="text-2xl font-bold count-up" data-target="20">0+</h3>
+              <p class="text-gray-700 mt-1 text-sm font-semibold">Courses</p>
+            </div>
+      
+          </div>
+        </div>
+      </section>
 
 
     <section id="news-section" class="bg-gray-100 py-10">
@@ -567,7 +669,7 @@
         </div>
 
         <!-- Image and Paragraph Row -->
-        <div class="flex flex-col md:flex-row items-stretch justify-center w-11/12 mx-auto mt-8 gap-6">
+        <div class="flex flex-col md:flex-row items-stretch justify-center w-11/12 mx-auto mt-8 gap-6" data-aos="fade-up" data-aos-duration="2000">
             <!-- Div for Image: 60% width, fixed height -->
             <div class="w-full md:w-3/5 h-64 md:h-72 bg-cover bg-center rounded-lg shadow-md"
                 style="background-image: url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=800&q=80');">
@@ -585,7 +687,7 @@
 
 
         <!-- Event Cards -->
-        <div class="w-11/12 mx-auto mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="w-11/12 mx-auto mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" data-aos="fade-up" data-aos-duration="2000">
             <!-- Single Event Card -->
             <div class="bg-white rounded-lg shadow p-6">
                 <!-- Div for Event Image: 30% width, fixed height -->
@@ -625,7 +727,6 @@
             </div>
         </div>
     </section>
-
 
 
     <section id="courses-section" class="bg-gray-100 mt-5 py-5 relative" style="background-image: url('assets/images/college.jpg'); background-size: cover; background-position: center;">
@@ -795,15 +896,15 @@
     </section>
 
     
-    <section id="cards-section" class="bg-gray-100 py-10">
-        <div class="py-5">
+    <section id="dept-section" class="bg-gray-100 py-10">
+        <div>
             <div class="relative bg-gradient-to-r from-[#4D0000] to-[#ff0000] text-center text-white font-semibold py-2 polygon-head w-[60%] text-lg px-10 pl-4 sm:w-[40%] sm:text-2xl">
                 <i class="fa-solid fa-door-open"></i> <span class="tracking-wide"> Departments</span>
             </div>
 
             <div class="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 dept-cards">
                 <!-- Card 1 -->
-                <div class="rounded overflow-hidden flex flex-col bg-white shadow-md">
+                <div class="rounded overflow-hidden flex flex-col bg-white shadow-md" data-aos="fade-up" data-aos-duration="2000">
                     <img class="w-full" src="assets/images/cs.jpg" alt="Sunset in the mountains">
                     <div class="relative -mt-16 px-4 py-3 bg-white rounded-md mx-4 mb-4 shadow-lg">
                         <p class="font-semibold text-lg transition duration-500 inline-block mb-2">School of Computer Science</p>
@@ -823,7 +924,7 @@
                 </div>
 
                 <!-- Card 2 -->
-                <div class="rounded overflow-hidden flex flex-col bg-white shadow-md">
+                <div class="rounded overflow-hidden flex flex-col bg-white shadow-md" data-aos="fade-up" data-aos-duration="2000">
                     <img class="w-full" src="assets/images/sw.jpg" alt="Sunset in the mountains">
                     <div class="relative -mt-16 px-4 py-3 bg-white rounded-md mx-4 mb-4 shadow-lg">
                         <p class="font-semibold text-lg transition duration-500 inline-block mb-2">School of Social Work</p>
@@ -843,7 +944,7 @@
                 </div>
 
                 <!-- Card 3 -->
-                <div class="rounded overflow-hidden flex flex-col bg-white shadow-md">
+                <div class="rounded overflow-hidden flex flex-col bg-white shadow-md" data-aos="fade-up" data-aos-duration="2000">
                     <img class="w-full" src="assets/images/management.jpg" alt="Sunset in the mountains">
                     <div class="relative -mt-16 px-4 py-3 bg-white rounded-md mx-4 mb-4 shadow-lg">
                         <p class="font-semibold text-lg transition duration-500 inline-block mb-2">School of Management</p>
@@ -864,7 +965,7 @@
 
                 <!-- Add 3 more cards similarly -->
                 <!-- Card 4 -->
-                <div class="rounded overflow-hidden flex flex-col bg-white shadow-md">
+                <div class="rounded overflow-hidden flex flex-col bg-white shadow-md" data-aos="fade-up" data-aos-duration="2000">
                     <img class="w-full" src="assets/images/commerce.jpg" alt="Sunset in the mountains">
                     <div class="relative -mt-16 px-4 py-3 bg-white rounded-md mx-4 mb-4 shadow-lg">
                         <p class="font-semibold text-lg transition duration-500 inline-block mb-2">School of Commerce</p>
@@ -884,7 +985,7 @@
                 </div>
 
                 <!-- Card 5 -->
-                <div class="rounded overflow-hidden flex flex-col bg-white shadow-md">
+                <div class="rounded overflow-hidden flex flex-col bg-white shadow-md" data-aos="fade-up" data-aos-duration="2000">
                     <img class="w-full" src="assets/images/media.jpg" alt="Sunset in the mountains">
                     <div class="relative -mt-16 px-4 py-3 bg-white rounded-md mx-4 mb-4 shadow-lg">
                         <p class="font-semibold text-lg transition duration-500 inline-block mb-2">School of Media and Communication</p>
@@ -904,7 +1005,7 @@
                 </div>
 
                 <!-- Card 6 -->
-                <div class="rounded overflow-hidden flex flex-col bg-white shadow-md">
+                <div class="rounded overflow-hidden flex flex-col bg-white shadow-md" data-aos="fade-up" data-aos-duration="2000">
                     <img class="w-full" src="assets/images/english.jpg" alt="Sunset in the mountains">
                     <div class="relative -mt-16 px-4 py-3 bg-white rounded-md mx-4 mb-4 shadow-lg">
                         <p class="font-semibold text-lg transition duration-500 inline-block mb-2">School of English</p>
@@ -925,7 +1026,7 @@
             </div>
         </div>
     </section>
-      
+
 
     <section id="placement-carousal-section" class="relative bg-gray-100 py-20" style="background-image: url('assets/images/main_block.JPG'); background-size: cover; background-position: center;">
         <!-- Overlay -->
@@ -941,7 +1042,7 @@
                 <!-- Carousel Wrapper -->
                 <div id="carouselWrapper" class="relative overflow-hidden w-full">
                     
-                    <div id="placementCarousel" class="flex transition-transform duration-500 ease-in-out space-x-5 flex-nowrap">
+                    <div id="placementCarousel" class="flex transition-transform duration-500 ease-in-out space-x-5 flex-nowrap" data-aos="fade-up" data-aos-duration="2000">
                         <!-- Prepend (cloned last 4 images for infinite scroll effect) -->
                         <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 flex-shrink-0 rounded-xl overflow-hidden text-center bg-white shadow">
                             <img src="https://placehold.co/400" class="h-auto rounded-t-xl w-full object-cover" />
@@ -1061,6 +1162,87 @@
                 <i class="fas fa-chevron-right text-white text-3xl"></i>
                 </button>
 
+            </div>
+        </div>
+    </section>
+
+
+    <section id="companies" class="bg-gray-100 py-10">
+        <div class="py-20 overflow-hidden relative">
+            <h3 class="text-4xl font-extrabold tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-red-800 to-red-500 drop-shadow-lg mx-auto text-center pb-2 border-b-4 border-gray-300 w-fit">
+                PLACEMENTS
+            </h3>
+            
+            <div class="relative w-full">
+                <div class="animate-scroll flex space-x-10 w-max p-20">
+                <!-- Repeat logos twice for seamless scroll -->
+                <div class="h-24 w-40 flex items-center justify-center bg-white rounded-lg shadow-lg">
+                    <img src="/assets/images/alembic.jpg" alt="Alembic" class="max-h-full max-w-full object-contain" />
+                </div>
+                <div class="h-24 w-40 flex items-center justify-center bg-white rounded-lg shadow-lg">
+                    <img src="/assets/images/byjus.jpg" alt="Byju's" class="max-h-full max-w-full object-contain" />
+                </div>
+                <div class="h-24 w-40 flex items-center justify-center bg-white rounded-lg shadow-lg">
+                    <img src="/assets/images/axis.jpg" alt="Axis" class="max-h-full max-w-full object-contain" />
+                </div>
+                <div class="h-24 w-40 flex items-center justify-center bg-white rounded-lg shadow-lg">
+                    <img src="/assets/images/Cognizant.jpg" alt="Cognizant" class="max-h-full max-w-full object-contain" />
+                </div>
+                <div class="h-24 w-40 flex items-center justify-center bg-white rounded-lg shadow-lg">
+                    <img src="/assets/images/envestnet.jpg" alt="Envestnet" class="max-h-full max-w-full object-contain" />
+                </div>
+                <div class="h-24 w-40 flex items-center justify-center bg-white rounded-lg shadow-lg">
+                    <img src="/assets/images/esaf.jpg" alt="ESAF" class="max-h-full max-w-full object-contain" />
+                </div>
+                <div class="h-24 w-40 flex items-center justify-center bg-white rounded-lg shadow-lg">
+                    <img src="/assets/images/hcl.jpg" alt="HCL" class="max-h-full max-w-full object-contain" />
+                </div>
+                <div class="h-24 w-40 flex items-center justify-center bg-white rounded-lg shadow-lg">
+                    <img src="/assets/images/hsbc.png" alt="HSBC" class="max-h-full max-w-full object-contain" />
+                </div>
+                <div class="h-24 w-40 flex items-center justify-center bg-white rounded-lg shadow-lg">
+                    <img src="/assets/images/huawei.jpg" alt="Huawei" class="max-h-full max-w-full object-contain" />
+                </div>
+                <div class="h-24 w-40 flex items-center justify-center bg-white rounded-lg shadow-lg">
+                    <img src="/assets/images/ibs.jpg" alt="IBS" class="max-h-full max-w-full object-contain" />
+                </div>
+                <div class="h-24 w-40 flex items-center justify-center bg-white rounded-lg shadow-lg">
+                    <img src="/assets/images/icici.png" alt="ICICI" class="max-h-full max-w-full object-contain" />
+                </div>
+                <div class="h-24 w-40 flex items-center justify-center bg-white rounded-lg shadow-lg">
+                    <img src="/assets/images/infosys.jpg" alt="Infosys" class="max-h-full max-w-full object-contain" />
+                </div>
+                <div class="h-24 w-40 flex items-center justify-center bg-white rounded-lg shadow-lg">
+                    <img src="/assets/images/kotak.png" alt="Kotak" class="max-h-full max-w-full object-contain" />
+                </div>
+                <div class="h-24 w-40 flex items-center justify-center bg-white rounded-lg shadow-lg">
+                    <img src="/assets/images/KPMG.jpg" alt="KPMG" class="max-h-full max-w-full object-contain" />
+                </div>
+                <div class="h-24 w-40 flex items-center justify-center bg-white rounded-lg shadow-lg">
+                    <img src="/assets/images/orion.jpg" alt="Orion" class="max-h-full max-w-full object-contain" />
+                </div>
+                <div class="h-24 w-40 flex items-center justify-center bg-white rounded-lg shadow-lg">
+                    <img src="/assets/images/rbs.jpg" alt="RBS" class="max-h-full max-w-full object-contain" />
+                </div>
+                <div class="h-24 w-40 flex items-center justify-center bg-white rounded-lg shadow-lg">
+                    <img src="/assets/images/lnt.jpg" alt="L&T" class="max-h-full max-w-full object-contain" />
+                </div>
+                <div class="h-24 w-40 flex items-center justify-center bg-white rounded-lg shadow-lg">
+                    <img src="/assets/images/TCS.gif" alt="TCS" class="max-h-full max-w-full object-contain" />
+                </div>
+                <div class="h-24 w-40 flex items-center justify-center bg-white rounded-lg shadow-lg">
+                    <img src="/assets/images/techmahindra.jpg" alt="Tech Mahindra" class="max-h-full max-w-full object-contain" />
+                </div>
+                <div class="h-24 w-40 flex items-center justify-center bg-white rounded-lg shadow-lg">
+                    <img src="/assets/images/wipro.jpg" alt="Wipro" class="max-h-full max-w-full object-contain" />
+                </div>
+                <div class="h-24 w-40 flex items-center justify-center bg-white rounded-lg shadow-lg">
+                    <img src="/assets/images/oyo.jpg" alt="OYO" class="max-h-full max-w-full object-contain" />
+                </div>
+        
+                <!-- Repeat set for infinite scroll effect -->
+                <!-- Copy and paste all above logos again here if needed -->
+                </div>
             </div>
         </div>
     </section>

@@ -75,6 +75,14 @@ body {
     border-bottom: 2px solid #4d0000; /* Custom border color */
 }
 
+@keyframes scroll {
+  0%   { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+.animate-scroll {
+  animation: scroll 30s linear infinite;
+}
+
 
 p.about-dist {
   line-height: 30px !important;
