@@ -539,41 +539,56 @@
     </nav>
 
     <!-- Poster Section -->
-    <section id="poster" class="bg-gray-200 relative mt-2">
-        <div id="posterCarousel" class="carousel slide" data-bs-ride="false">
-          <div class="carousel-inner">
-      
-            <!-- Image Slides -->
-            <div class="carousel-item active" data-type="image" data-interval="3000">
-              <img src="assets/posters/poster.jpg" class="w-full h-[500px] object-cover" alt="Event Poster">
-            </div>
-      
-            <div class="carousel-item" data-type="image" data-interval="3000">
-              <img src="assets/posters/mgug24-1.jpg" class="w-full h-[500px] object-cover" alt="Event Poster">
-            </div>
-      
-            <div class="carousel-item" data-type="image" data-interval="3000">
-              <img src="assets/posters/dignito24.jpg" class="w-full h-[500px] object-cover" alt="Event Poster">
-            </div>
-      
-            <div class="carousel-item" data-type="image" data-interval="3000">
-              <img src="assets/posters/daksh24-1.jpg" class="w-full h-[500px] object-cover" alt="Event Poster">
-            </div>
-      
-            <div class="carousel-item" data-type="image" data-interval="3000">
-              <img src="assets/posters/lafoire24.jpg" class="w-full h-[500px] object-cover" alt="Event Poster">
-            </div>
+    <section id="poster" class="bg-gray-200 relative mt-2 w-full overflow-hidden">
+        <div id="posterCarousel" class="carousel slide w-full" data-bs-ride="false">
+          <div class="carousel-inner w-full">
       
             <!-- Video Slide -->
-            <div class="carousel-item" data-type="video">
-              <div class="w-full h-[500px]">
+            <div class="carousel-item active" data-type="video">
+              <div class="w-full aspect-[20/7]">
                 <video class="carousel-video w-full h-full object-cover" muted playsinline>
                   <source src="assets/posters/college_day.webm" type="video/webm">
                   Your browser does not support the video tag.
                 </video>
               </div>
             </div>
+
+            <!-- Image Slides -->
+            <div class="carousel-item" data-type="image" data-interval="3000">
+              <div class="w-full aspect-[20/7]">
+                <img src="assets/posters/poster.jpg" class="w-full h-full object-cover" alt="Event Poster">
+              </div>
+            </div>
       
+            <div class="carousel-item" data-type="image" data-interval="3000">
+              <div class="w-full aspect-[20/7]">
+                <img src="assets/posters/dignito24.jpg" class="w-full h-full object-cover" alt="Event Poster">
+              </div>
+            </div>
+      
+            <div class="carousel-item" data-type="image" data-interval="3000">
+              <div class="w-full aspect-[20/7]">
+                <img src="assets/posters/daksh24-1.jpg" class="w-full h-full object-cover" alt="Event Poster">
+              </div>
+            </div>
+      
+            <div class="carousel-item" data-type="image" data-interval="3000">
+              <div class="w-full aspect-[20/7]">
+                <img src="assets/posters/lafoire24.jpg" class="w-full h-full object-cover" alt="Event Poster">
+              </div>
+            </div>
+            
+            <div class="carousel-item" data-type="image" data-interval="3000">
+              <div class="w-full aspect-[20/7]">
+                <img src="https://placehold.co/2000x700?text=These%20images%20are%20in%20the%20ratio%202000x700" class="w-full h-full object-cover" alt="Event Poster">
+              </div>
+            </div>
+            
+            <div class="carousel-item" data-type="image" data-interval="3000">
+              <div class="w-full aspect-[20/7]">
+                <img src="https://placehold.co/2000x700?text=These%20images%20are%20in%20the%20ratio%202000x700" class="w-full h-full object-cover" alt="Event Poster">
+              </div>
+            </div>
           </div>
       
           <!-- Controls -->
@@ -586,12 +601,14 @@
             <span class="visually-hidden">Next</span>
           </button>
         </div>
-    </section>      
+    </section>
+      
+      
 
 
     <!-- Main Content Section -->
-    <section id="about-section" class="bg-gray-100 mt-5">
-        <div class="py-5 ">
+    <section id="about-section" class="bg-gray-100 mt-4">
+        <div>
             <div class="relative bg-gradient-to-r from-[#4D0000] to-[#ff0000] text-center text-white font-semibold py-2 mb-8 polygon-head w-[60%] text-lg px-10 pl-4 sm:w-[40%] sm:text-2xl">
                 <i class="fas fa-graduation-cap"></i> <span class="tracking-wide">About DiST</span>
             </div>
